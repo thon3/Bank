@@ -1,4 +1,7 @@
+//package br.com.banco.contas;
+
 import java.time.LocalDate;
+import java.util.Objects;
 
 public abstract class ContaDeposito {
 
@@ -45,7 +48,7 @@ public abstract class ContaDeposito {
     public boolean equals(Object outraConta) {
         if (this == outraConta) return true;
         if (outraConta == null || getClass() != outraConta.getClass()) return false;
- ContaDeposito conta = (ContaDeposito) outraConta;
+        ContaDeposito conta = (ContaDeposito) outraConta;
         return numeroConta == conta.numeroConta;
     }
 
